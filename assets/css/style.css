@@ -1,0 +1,152 @@
+/* Reset */
+* {
+  /* padding will not add to the ACTUALLY WIDTH OF THE BOX */
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+/* Main Styling */
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+a {
+  text-decoration: none;
+}
+
+/* rem = ?px / RootPx        ==>32px /16rootpx == 2 rem */
+/* Create Variables */
+:root {
+  /* --primary-color: #0f0;
+  --secondary-color: #00f; */
+  --blue-color: #0d3bef;
+}
+/* use Variables */
+/* h1 {
+  color: var(--primary-color);
+  text-shadow: 2px 2px var(--secondary-color);
+} */
+
+/* Nav Bar */
+
+.navImage {
+  width: 122px;
+  border-radius: 30%;
+}
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 1rem; */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--blue-color);
+  color: rgb(20, 19, 19);
+  padding: 1rem;
+  /* debx img will go on top if you don't have this z index */
+  z-index: 3;
+  box-shadow: 2px 2px 2px 0px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+#navbar ul li a {
+  color: rgb(142, 169, 248);
+  padding: 0.1rem;
+  margin: 0.1rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  text-decoration: none;
+}
+#navbar ul li {
+  padding: 1rem;
+  transition: transform 0.7s;
+  transition-timing-function: cubic-bezier(0.45, 1.87, 0.62, 1.6);
+}
+#navbar ul li:hover a.nav {
+  color: #fff;
+  border-bottom: 4px solid white;
+}
+#navbar ul li:hover {
+  transform: translateY(-10%);
+}
+a {
+  text-decoration: none;
+}
+
+#navbar > div > h1 {
+  color: #fff;
+  padding: 15px;
+}
+
+#indexMain {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#indexMain h1 {
+  color: #fff;
+  background-color: aquamarine;
+  padding: 0.5rem;
+  border-radius: 10px 10px 0px 0px;
+  margin: 0.625rem 1rem 0px 1rem;
+}
+
+.dish {
+  transition: color 1.9s, box-shadow 0.7s, transform 0.7s;
+  transition-timing-function: cubic-bezier(0.45, 1.87, 0.62, 1.6);
+}
+.dish:hover {
+  box-shadow: 5px 4px 9px black;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 788px) {
+  #navbar {
+    flex-direction: column;
+    padding: 5px;
+  }
+  #navbar ul {
+    flex-direction: column;
+  }
+  #navbar ul li {
+    padding: 0px;
+    margin: 0px;
+  }
+  .navImage {
+    width: 60px;
+  }
+  .navContainer {
+    flex-direction: column;
+  }
+  #navbar div h1 {
+    margin: 8px;
+    padding: 0;
+  }
+
+  #navbar ul {
+    margin: 0.5rem;
+  }
+}
