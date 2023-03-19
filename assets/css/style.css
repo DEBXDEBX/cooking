@@ -48,7 +48,7 @@ a {
   display: flex;
   justify-content: space-between;
   /* margin-top: 1rem; */
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   z-index: 1;
   background-color: var(--blue-color);
@@ -56,7 +56,7 @@ a {
   padding: 1rem;
   /* debx img will go on top if you don't have this z index */
   z-index: 3;
-  box-shadow: 2px 2px 2px 0px;
+  /* box-shadow: 2px 2px 2px 0px; */
 }
 .flex {
   display: flex;

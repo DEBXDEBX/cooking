@@ -1,0 +1,15 @@
+.conversionBox {
+  /* background-color: #a5aff5; */
+  background-color: #cca7ed;
+  padding: 0.625rem;
+  border-radius: 0.3rem;
+  width: 90%;
+  margin: 1rem auto;
+}
+.conversionBox ul {
+  padding: 3rem;
+}
+/* background-color: #cca7ed; */
+.conversionBox.units {
+  background-color: #a5aff5;
+}
